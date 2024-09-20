@@ -19,7 +19,6 @@ A lightning-fast recipe discovery web application built with Vite, React, TypeSc
 *   **Data Fetching**: React Query
 *   **Styling**: CSS Modules
 
-
 ## Getting Started
 
 ### Installation
@@ -28,3 +27,9 @@ A lightning-fast recipe discovery web application built with Vite, React, TypeSc
 git clone https://github.com/roohullahkhan98k/Cook-pal.git
 cd Cook-pal
 npm install
+
+### To Run Development Server
+
+npm run dev
+
+

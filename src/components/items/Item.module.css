@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+
+.wrapper {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 30px; 
+    max-width: 900px;
+  }
+  
+  .card {
+    width: calc(30.33% - 20px);
+    margin-bottom: 30px;
+  }
+  
+  .imageContainer {
+    position: relative;
+    height: 200px; 
+  }
+  
+  .image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+  }
+  
+  .cuisine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px; 
+    font-family: 'Montez', cursive;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .info {
+    padding: 20px; 
+  }
+  .details {
+    flex-grow: 1;
+  }
+  .mealType {
+    font-size: 12px;
+  }
+  .detailRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .titleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .info h4 {
+    font-weight: bold;
+    font-size: 16px;
+    flex-basis: 60%; 
+    word-wrap: break-word;
+    margin-bottom: 0; 
+  }
+  
+  .reviews {
+    color: black;
+    background-color: #84BD00;
+    flex-basis: 37%; 
+    margin-left: 10px; 
+  }
+  
+  .info p {
+    font-size: 12px;
+
+  }
+  .ratingContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .cardLink {
+    text-decoration: none;
+    color: inherit;
+  }
+
+ /* Media Queries */
+
+  @media (max-width: 1010px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }

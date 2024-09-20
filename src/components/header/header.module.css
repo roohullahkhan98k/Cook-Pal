@@ -1,0 +1,111 @@
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 3rem;
+  margin-left: 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.desktopMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenuLinks {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.mobileMenuLinks.open {
+  display: block;
+}
+
+.rightSide.mobile {
+  margin-right: 0;
+}
+
+.rightSide.mobile a:first-child {
+  margin-right: 1rem;
+}
+
+ /* Media Queries */
+
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+    cursor: pointer;
+  }
+  .rightSide {
+    margin-right: 1rem;
+  }
+  .rightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .rightSide a {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 908px) and (min-width: 766px) {
+  .rightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
+  .rightSide a {
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .navLink {
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+  }
+}
